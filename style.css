@@ -1,0 +1,169 @@
+@charset  "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* header */
+header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+header .inner {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header .inner .utill {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    display: flex;
+    flex-direction: row;
+}
+header .inner .utill button {
+    height: 37px;
+    margin-right: 15px;
+}
+header .inner form {
+    width: 280px;
+}
+header .inner #gnb {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0px;
+}
+header .inner #gnb .icon {
+    width: 50px;
+    height: 50px;
+    margin-right:3px;
+}
+header .inner #gnb li {
+    float: left;
+}
+header .inner #gnb li a {
+    display: block;
+    padding: 0px 10px;
+    color: #e06805;
+    text-decoration: none;
+}
+header .inner #gnb li a:hover {
+    color: #0529e0;
+}
+header .inner #gnb li:nth-of-type(1) a:hover {
+    color: #e06805;
+}
+/* figure */
+figure {
+    width: 100%;
+    height: calc(70vh - 80px);
+    position: relative;
+    position: hidden;
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+figure .inner  {
+    width: 500px;
+   margin-left: 105px;
+    position: relative;
+}
+figure .myfoodbox  {
+    width: 500px;
+   margin-left: 105px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+figure .myfoodbox .foodbtn {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+/* section */
+section {
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .mycards {
+    width: 1220px;
+}
+section .mycards img{
+    height: 150px;
+    object-fit: cover;
+}
+section .mycards .card{
+    margin-right: 20px;
+}
+section .mycards .card:nth-of-type(4n) {
+    margin-right: 0px;
+}
+/* footer */
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    border-top: 1px solid #dddddd;
+}
+footer .inner {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .inner .right {
+    display: flex;
+    flex-direction: row;
+}
+footer .inner .right div {
+margin-right: 180px;
+}
+footer .inner .right h5 {
+    margin-bottom: 15px;
+}
+footer .inner .right ul {
+    padding-left: 0px;
+}
+footer .inner .right li {
+    margin-bottom: 10px;
+}
+footer .inner .right li a {
+    text-decoration: none;
+    color: #e06805;
+}
+footer .inner .right li a:hover {
+    color: #0529e0;
+}
